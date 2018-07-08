@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css-assignment</title>
+	<style type="text/css">
+	    *{
+	    	box-sizing: border-box;
+	    }
+		#heading{
+			text-align: center;
+			size: 75%;
+		}
+		.d{
+			top: 75px;
+			left: 40px;
+			background-color: grey;
+			float: left;
+			/*width: 30%;*/
+			height: 225px;
+			border: 3px solid black;
+			position: relative;
+		}
+		#col1{
+			padding-left: 20px;
+		}
+		#col2{
+			padding-left: 20px;
+			margin-left: 35px;
+		}
+		#col3{
+			padding-left: 20px;
+			margin-left: 35px;
+		}
+		.s{
+			
+			border-width: 0px 0px 2px 2px;
+            border-style: solid;
+            position: relative;
+            border-color: black;
+            width: 60px;
+            float: right;
+            padding: auto;
+            margin-bottom: 10px;
+            font-style: bold;
+            font-family: sans-serif helvetica;
+		}
+        #sec1{        	
+        	background-color: pink;  
+        	padding-left: 3px;  
+        	width: 63px;
+        }
+        #sec2{
+        	background-color: maroon;
+        	color: white;
+        	padding-left: 12px; 
+        }
+        #sec3{
+        	background-color: yellow;
+        	padding-left: 12px; 
+        }
+        @media(min-width: 992px){
+           #col1{
+          	width: 30%;
+          }
+          #col2{
+          	width: 30%;
+          }
+          #col3{
+          	width: 30%;
+          }
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+          #col1{
+          	width: 41.5%;
+          	margin-left: 40px;
+          }
+          #col2{
+          	width: 41.5%;
+          	margin-right: 40px;
+          }
+          #col3{
+          	width: 87%;
+          	margin-left: 40px;
+          	margin-top: 20px;
+          }
+        }
+        @media(max-width: 767px){
+          #col1{
+          	width: 90%;
+          }
+          #col2{
+          	width: 90%;
+          	margin-left: 0px;
+          	margin-top: 20px;
+          }
+          #col3{
+          	width: 90%;
+          	margin-left: 0px;
+          	margin-top: 20px;
+          }
+        }
+	</style>
+</head>
+<body>
+	<h1 id="heading">our menu</h1>
+   <div id="col1" class="d">
+   	<section id="sec1" class="s">Chicken</section>
+   	<p class="para">lorem ipsum dolor sit amet, consectetur<br>
+       adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore madna aliqua. Ut enim ad<br>minim veniam,quis nostrud  exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat.
+   	</p>
+   </div>
+   <div id="col2" class="d">
+   	<section id="sec2" class="s">Beef</section>
+   	<p class="para">lorem ipsum dolor sit amet, consectetur<br>
+       adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore madna aliqua. Ut<br> enim adminim veniam,quis nostrud  exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo<br> consequat.</p>
+   </div>
+   <div id="col3" class="d">
+   	<section id="sec3" class="s">Sushi</section>
+   	<p class="para">lorem ipsum dolor sit amet, consectetur<br>
+       adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore madna aliqua. Ut<br>enim ad minim veniam,quis nostrud  exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo<br>consequat.</p>
+   </div>
+</body>
+</html>
